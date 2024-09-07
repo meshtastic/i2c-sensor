@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+.pio/*
+.vscode/c_cpp_properties.json
+.vscode/extensions.json
+.vscode/launch.json
