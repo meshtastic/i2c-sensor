@@ -1,5 +1,5 @@
-#ifndef I2C_REQUESTS_H
-#define I2C_REQUESTS_H
+#ifndef I2CCLIENT_H
+#define I2CCLIENTH
 
 #pragma once
 #include <Arduino.h>

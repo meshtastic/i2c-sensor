@@ -1,5 +1,5 @@
-#ifndef I2CHANDLERS_H
-#define I2CHANDLERS_H
+#ifndef I2CHOST_H
+#define I2CHOST_H
 
 #include <Arduino.h>
 #include <I2CDefinitions.h>

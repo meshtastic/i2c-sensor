@@ -1,8 +1,8 @@
 #include <I2CDefinitions.h>
 #include <Wire.h>
 
-#if MESHTASTIC_I2C_SENSOR_MASTER
-#include <I2CHandlers.h>
+#if MESHTASTIC_I2C_SENSOR_HOST
+#include <I2CHost.h>
 
 void setup() {
     while (!Serial) { delay(10); }
@@ -21,12 +21,12 @@ void loop() {
     delay(100);
 }
 #else
-#include <I2CRequests.h>
+#include <I2CClient.h>
 
 void setup() {
     while (!Serial) { delay(10); }
     Serial.begin(115200);
-    Serial.println("Initializing Meshtastic I2C Sensor device (slave)...");
+    Serial.println("Initializing Meshtastic I2C Sensor device (client)...");
     Wire.begin(MT_I2C_ADDRESS);
     Wire.onReceive(onReceiveMetrics);
 }
