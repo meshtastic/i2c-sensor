@@ -1,12 +1,8 @@
 #ifndef I2CDefinitions_h
 #define I2CDefinitions_h
 
-#include <Adafruit_I2CDevice.h>
-
 #define MT_I2C_ADDRESS 0x69
 #define MT_I2C_VERSION 1
-
-Adafruit_I2CDevice i2cDevice = Adafruit_I2CDevice(MT_I2C_ADDRESS);
 
 #define MT_HAS_TEMPERATURE 0x10
 #define MT_GET_TEMPERATURE 0x11
